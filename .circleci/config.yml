@@ -55,5 +55,5 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no ubuntu@ec2-16-170-169-90.eu-north-1.compute.amazonaws.com "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf ~/DockerApp/;git clone https://github.com/DMLFrancis/DockerApp.git; source DockerApp/deploy.sh"
+          command: ssh -o StrictHostKeyChecking=no ubuntu@ec2-16-170-209-81.eu-north-1.compute.amazonaws.com "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf ~/Week9App/;git clone https://github.com/DMLFrancis/Week9App.git; source Week9App/deploy.sh"
 
